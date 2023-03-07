@@ -1,0 +1,32 @@
+.topicos{
+    padding: 1em  0;
+    background: var(--azul-degrade); /*background por ser uma cor com mais propriedades e não sólida (background-color)*/
+    text-align: center;
+}
+
+.topicos__titulo{
+    margin-bottom: 1em;
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.topicos__lista{
+    display: flex;
+    flex-wrap: wrap;/*quebra de linha ao final da tela */
+    justify-content: center;
+
+}
+
+.topicos__link{
+    color: var(--branco);
+    padding: 1em;
+    background-color: var(--laranja);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.topicos__item{
+    margin: 2em 0.5em;
+}

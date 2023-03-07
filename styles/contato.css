@@ -1,0 +1,37 @@
+.contato{
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.contato__titulo, .contato__texto{
+    background: var(--azul-degrade); /* Propriedade background por ser degradê, se fosse cor única, utilizaríamos background-color*/
+    -webkit-background-clip: text; /*Webkits para diversos browsers */
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /*traz a cor do background para o texto*/
+}
+
+.contato__titulo{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contato__texto{
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.contato__email{
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    padding: 1em;
+    width: 90%; /*A barra de pesquisa poderá ocupar 100% do espaço que pode ocupar no banner*/
+    color: var(--azul);
+}
+
+.contato__email::placeholder{
+    font-family: var(--fonte-principal);
+    color: var(--azul);
+    background: url(../img/email.svg);
+    background-repeat:no-repeat;
+    padding-left: 2em;
+}

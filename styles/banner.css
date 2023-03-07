@@ -1,0 +1,37 @@
+.banner{
+    background: var(--azul-degrade);
+    color: var(--branco);
+    text-align: center;
+    padding: 2.5em 2em; /*em é o tamanho da fonte. Então o padding aqui seria 2.5*16 e 2*16*/
+}
+
+.banner__titulo{
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+.banner__texto{
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+.banner__pesquisa{
+    background-color: transparent; /*A cor usada será a cor de fundo do banner*/
+    border: 1px solid var(--branco);
+    color: var(--branco);
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%; /*A barra de pesquisa poderá ocupar 100% do espaço que pode ocupar no banner*/
+}
+
+.banner__pesquisa::placeholder{
+    font-size: 14px;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    text-align: center;
+    color: var(--branco);
+    background: url(../img/lupa.svg);
+    background-repeat: no-repeat;
+    background-position: 1em;
+}

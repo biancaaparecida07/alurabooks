@@ -1,0 +1,61 @@
+.cabecalho__menu-hambuguer{
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/menu.svg); /* O .. significa que vai voltar uma pasta acima para procurar o caminho. Pois, se não houvesse, iria procurar na mesma pasta que está o arquivo header.css*/
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+
+}
+
+.cabecalho{
+    color: var(--branco);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative; /* Permitir a posição da lista */
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem{
+    padding: 1em;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%; /* Lista abaixo da imagem do menu pois tirou 100% do cabeçalho e se posicionou pra baixo*/
+    width: 60vw;
+
+}
+
+.container__botao:checked ~ .lista-menu{
+    display: block;
+}
+
+.lista-menu__titulo, .lista-menu__item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link{
+    background: var(--azul-degrade); /* Propriedade background por ser degradê, se fosse cor única, utilizaríamos background-color*/
+    -webkit-background-clip: text; /*Webkits para diversos browsers */
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /*A cor de brackground só será ativa onde tem texto*/
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.container__botao{
+    display: none;
+}
