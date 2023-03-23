@@ -8,6 +8,18 @@
 
 }
 
+/*Combinadores CSS
+~ --> Procura a próxima classe que tenha container__rotulo que esteja depois do container__botao
+> --> Procura dentro da container__rotulo o elemento que contenha cabecalho__menu-hamburger
+*/
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hambuguer{
+    background-image: url(../img/menubranco.svg);
+}
+
+.container__botao:checked ~ .container__rotulo{
+    background: var(--azul-degrade);
+}
+
 .cabecalho{
     /*color: var(--branco);*/
     display: flex;
@@ -98,6 +110,26 @@
     .opcoes__botao:checked ~ .lista-menu{
         display: block;
         width: auto;
+    }
+
+    
+    .opcoes__botao:checked ~ .opcoes__rotulo> .opcoes__item{
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .opcoes__item{
+        padding: 2em;
+    }
+    
+    .lista-menu__item:hover{
+        background: var(--azul-degrade);
+        
+    }
+
+    .lista-menu__item:hover>.lista-menu__link{
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
     }
 }
 
