@@ -12,6 +12,12 @@ hr{
     display: none;
 }
 
+.rodape__lista-link:hover{
+    color: var(--laranja);
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
 @media screen and (min-width: 1024px){
     .rodape{
         display: flex;

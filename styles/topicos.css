@@ -27,6 +27,11 @@
     font-weight: 700;
 }
 
+.topicos__link:hover{
+    background-color: var(--branco);
+    color: var(--laranja);
+}
+
 .topicos__item{
     margin: 2em 0.5em;
 }
